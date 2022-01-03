@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Form</title>
+</head>
+<body>
+    <form class="row row-cols-lg-auto g-3 align-items-center" action="https://sheetdb.io/api/v1/zuy188vdmafue" method="POST" id="sheetdb-form" autocomplete="off">
+        <div class="col-12"><br>
+          <label class="visually-hidden" for="inlineFormInputGroupUsername">nombre</label>
+          <div class="input-group"> 
+            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Nombre" name="data[Nombre]">
+          </div>
+        </div>
+
+        <div class="col-12">
+            <label class="visually-hidden" for="inlineFormInputGroupUsername">apellido</label>
+            <div class="input-group"> 
+              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Apellido" name="data[Apellido]">
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label class="visually-hidden" for="inlineFormInputGroupUsername">dni</label>
+            <div class="input-group"> 
+              <input type="number" class="form-control" id="inlineFormInputGroupUsername" placeholder="DNI" name="data[DNI]">
+            </div>
+          </div>
+          
+          <div class="col-12">
+            <label class="visually-hidden" for="inlineFormInputGroupUsername">dni</label>
+            <div class="input-group"> 
+              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Dirección" name="data[Dirección]">
+            </div>
+          </div>
+          
+          <div class="col-12">
+            <label class="visually-hidden" for="inlineFormInputGroupUsername">celular</label>
+            <div class="input-group"> 
+              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Celular" name="data[Celular]">
+            </div>
+
+          </div><div class="col-12">
+            <label class="visually-hidden" for="inlineFormInputGroupUsername">mail</label>
+            <div class="input-group"> 
+              <input type="mail" class="form-control" id="inlineFormInputGroupUsername" placeholder="Mail" name="data[Mail]">
+            </div>
+          </div>
+
+        </div><div class="col-12">
+            <label class="visually-hidden" for="inlineFormInputGroupUsername">ocupacion</label>
+            <div class="input-group"> 
+              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Ocupación" name="data[Ocupación]">
+            </div>
+          </div>
+        
+
+        </div><div class="col-12">
+            <label class="visually-hidden" for="inlineFormInputGroupUsername">edad</label>
+            <div class="input-group"> 
+              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Edad" name="data[edad]">
+            </div>
+          </div>
+
+        <div class="col-12">
+          <label class="visually-hidden" for="inlineFormSelectPref">sex</label>
+          <select class="form-select" id="inlineFormSelectPref" name="data[Sexo]">
+            <option selected disabled>Sexo del animal</option>
+            <option value="Macho">Macho</option>
+            <option value="Hembra">Hembra</option>
+          </select>
+        </div>
+      
+        
+      
+        <div class="col-12">
+          <button type="submit" class="btn btn-outline-secondary">Enviar</button>
+        </div>
+      </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+
+    <script>
+        var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            alert('ENVIADO')
+          });
+        });
+      </script>
+
+
+
+</body>
+</html>
