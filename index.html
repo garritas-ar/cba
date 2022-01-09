@@ -7,7 +7,7 @@
     <!-- GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
     <!-- BOOTSTRAP 4 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- SCROOLL REVEAL JS LIBRARY CDN -->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <!-- CUSTOM CSS -->
@@ -19,15 +19,27 @@
 
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"><i class="fas fa-paw fa-2x"> <span> Garritas</i></a </span>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav mr-auto">
-          <a class="nav-item nav-link" href="#header">Home</a>
-          <a class="nav-item nav-link" href="#castraciones">Castraciones</a>
-          <a class="nav-item nav-link" href="#veterinarias">Veterinarias</a>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> &nbsp <i class="fas fa-paw fa-1x" > Garritas</i></a> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-item nav-link" href="#castraciones">Castraciones</a>
+        <a class="nav-item nav-link" href="#veterinarias">Veterinarias</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -38,7 +50,7 @@
         <div class="row">
           <div class="col-md-6 col-sm-6">
             <div class="header-content-left">
-              <img src="https://www.nicepng.com/png/full/58-582607_cute-cat-png-transparent-image-imagenes-de-gatos.png" style="width: 70%;">
+              <img src="https://www.nicepng.com/png/full/58-582607_cute-cat-png-transparent-image-imagenes-de-gatos.png" style="width: 60%;" >
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
@@ -48,7 +60,7 @@
               <p class="">Si ya tenés un michi es muy importante la esterilización para evitar su reproducción, de esta manera ayudamos a que cachorros no deseados terminen en la calle, además de evitar peleas y enfermedades.</p><br>
 
 
-              <a href="#" class="btn btn-outline-secondary header-btn btn-lg mt-2">Donaciones</a>
+              <a href="donar.html" class="btn btn-outline-secondary header-btn btn-lg mt-2">Donaciones</a>&nbsp
               <a href="forms/formulario.html" class="btn btn-outline-secondary header-btn btn-lg mt-2">Adopciones</a>
             </div>
           </div>
@@ -69,7 +81,7 @@
         <div class="row mt-5">
           <div class="col-md-6">
             <div class="info-left">
-              <img src="https://raw.githubusercontent.com/manuozan/me/main/pngegg.png" style="width: 70%">
+              <img src="img/gatito2.png" style="width: 70%" class="mx-auto d-block">
             </div>
           </div>
           <div class="col-md-6 my-auto">
@@ -127,9 +139,9 @@
             </div>
           </div>
           <div class="col-md-6 my-auto">
-            <h2>Centro de castraciones en Córdoba</h2>
+            <!-- <h2>Centro de castraciones en Córdoba</h2> -->
             <div class="info-right">
-              <!-- <h2>Centro de castraciones, Ciudad de Córdoba</h2> -->
+              <h2>Centro de castraciones en Córdoba</h2>
               <!-- <p>De no colocar las vacunas elementales o básicas, tu gato puede sufrir una serie de consecuencias graves en su salud, que le pueden hasta provocar la muerte. Entre ellas, se ubican las enfermedades como:</p> -->
               <ul>
                 <li>Zona Norte: Centro de Control de Reproducción y Tenencia Responsable de Mascotas. Concepción de Bermejo 3179, barrio La France. Atiende de lunes a viernes de 7:30 a 14:00 horas con turnos programados.</li><br>
@@ -201,7 +213,7 @@
           <div class="col-md-6">
             <h2>Las mejores veterinarias👩🏻‍⚕️</h2>
             <ul>
-              <li>Centauro</li>
+              <li>Centauro: 351 486-3987 - Av Armada Argentina 141</li>
               <li>VA.Vet</li>
               <li>Hocicos</li>
               <li>Eva Inguerman</li>
@@ -225,7 +237,7 @@
         </div>
       </div>
     </section>
-
+    
 
     <footer>
       <div class="signature">
@@ -296,12 +308,12 @@
         viewFactor: 0.2
       });
 
-      sr.reveal('footer', {
-        duration: 1000,
-        origin: 'bottom',
-        distance: '200px',
-        viewFactor: 0.2
-      });
+      // sr.reveal('footer', {
+      //   duration: 1000,
+      //   origin: 'bottom',
+      //   distance: '200px',
+      //   viewFactor: 0.2
+      // });
 
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
